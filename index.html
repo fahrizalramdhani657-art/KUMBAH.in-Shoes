@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link in Bio</title>
+    <!-- FontAwesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #38bdf8;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 16px;
+            display: block;
+            box-shadow: 0 4px 14px rgba(56, 189, 248, 0.3);
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        p.bio {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            margin-bottom: 24px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 14px 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-link:hover {
+            transform: translateY(-3px);
+            background-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Warna Icon Spesifik */
+        .fa-whatsapp { color: #25D366; font-size: 1.2rem; }
+        .fa-tiktok { color: #ff0050; font-size: 1.2rem; }
+        .fa-location-dot { color: #ea4335; font-size: 1.2rem; }
+
+        footer {
+            margin-top: 32px;
+            font-size: 0.75rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Foto Profil (Ganti URL fotomu di sini) -->
+        <img src="https://i.ibb.co.com/60yGRkYL/Whats-App-Image-2026-07-31-at-23-12-59.jpg" class="profile-img" alt="KUMBAHin shoes">
+        <h1>KUMBAHin.Shoes</h1>
+        <p class="bio">Klik salah satu tombol di bawah untuk terhubung!</p>
+
+        <!-- Daftar Link -->
+        <div class="links">
+            <!-- Link WhatsApp -->
+            <a href="https://wa.me/62895627133553?text=Halo%20mau%20tanya-tanya%20dong" target="_blank" class="btn-link">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Chat WhatsApp Admin 1</span>
+            </a>
+            <a herf="https://wa.me/6289651545878?text=Halo%20Admin%20" target="_blank" class="btn-link">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Chat Whatsapp Admin 2</span>
+            </a>
+
+            <!-- Link TikTok -->
+            <a href="https://www.tiktok.com/@kumbahin_shoes5?" target="_blank" class="btn-link">
+                <i class="fa-brands fa-tiktok"></i>
+                <span>Lihat TikTok</span>
+            </a>
+
+            <!-- Link Google Maps -->
+            <a href="https://www.google.com/maps/place/3FM7%2BQ88+CV.CITRA+GEMILANG+TEACH,+Cihampelas,+Kec.+Cihampelas,+Kabupaten+Bandung+Barat,+Jawa+Barat+40562/@-6.9158825,107.4630451,19z/data=!4m6!3m5!1s0x2e68fbd0b5f324e7:0x9c105271090534c6!8m2!3d-6.9155937!4d107.4633139!16s%2Fg%2F11h9gp019b?g_ep=Eg1tbF8yMDI2MDcyOF8wIOC7DCoASAJQAg%3D%3D" target="_blank" class="btn-link">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Lokasi Google Maps</span>
+            </a>
+        </div>
+
+        <footer>
+            © 2026 namatoko_kamu
+        </footer>
+    </div>
+
+</body>
+</html>
